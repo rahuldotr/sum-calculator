@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+        <title>Addition</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <meta charset="windows-1252">
+    <script>
+
+    $(document).ready(function(){
+        $("#submit").on("click", function(){
+        var a = parseInt($('#a').val());
+        var b = parseInt($('#b').val());
+           var sum = a + b;
+            document.getElementById("demo").innerHTML = sum;
+        })
+    })
+    </script>
+    </head>
+    <body style="padding-top: 200px;">
+        <center>
+       Enter 1st No.<input type="number" id="a" name="option">
+       Enter 2st No.<input type="number" id="b" name="task">
+    <input id="submit" type="button" value="ADD">
+    <p  id="demo"></p>
+        </center>
+    </body>
+
+    </html>
